@@ -1,0 +1,429 @@
+   .softpolli-hero {
+       position: relative;
+       width: 100%;
+       height: calc(100vh - 124px);
+       min-height: 650px;
+       overflow: hidden;
+       background: #080b1e;
+   }
+
+   .softpolliSwiper {
+       width: 100%;
+       height: 100%;
+   }
+
+   .soft-slide {
+       position: relative;
+       width: 100%;
+       height: 100%;
+       overflow: hidden;
+   }
+
+   /* ========================================================= BACKGROUND ========================================================= */
+   .soft-background {
+       position: absolute;
+       inset: 0;
+       width: 100%;
+       height: 100%;
+       background-size: cover;
+       background-position: center;
+       z-index: 1;
+       filter: brightness(65%);
+       clip-path: circle(5% at 70% 50%);
+       opacity: 0;
+   }
+
+   /* Dark overlay */
+   .soft-background::after {
+       content: "";
+       position: absolute;
+       inset: 0;
+       background: linear-gradient(90deg, rgba(8, 11, 30, 0.95) 0%, rgba(8, 11, 30, 0.72) 42%, rgba(8, 11, 30, 0.25) 100%);
+       z-index: 2;
+   }
+
+   /* Active background animation */
+   .swiper-slide-active .soft-background {
+       animation: softFlowReveal 2.5s ease-in-out forwards;
+   }
+
+   @keyframes softFlowReveal {
+       0% {
+           clip-path: circle(4% at 72% 50%);
+           opacity: 0;
+           transform: scale(1.12);
+       }
+
+       50% {
+           opacity: 1;
+       }
+
+       100% {
+           clip-path: circle(85% at 72% 50%);
+           opacity: 1;
+           transform: scale(1);
+       }
+   }
+
+   /* ========================================================= CONTENT ========================================================= */
+   .soft-content {
+       position: absolute;
+       left: 8%;
+       top: 50%;
+       transform: translateY(-50%);
+       width: min(700px, 48%);
+       color: white;
+       z-index: 5;
+   }
+
+   /* Small heading */
+   .soft-small-title {
+       display: inline-flex;
+       align-items: center;
+       gap: 10px;
+       color: #f1592a;
+       font-size: 13px;
+       font-weight: 700;
+       letter-spacing: 3px;
+       margin-bottom: 20px;
+       opacity: 0;
+       transform: translateY(-35px);
+   }
+
+   /* Main heading */
+   .soft-content h1 {
+       margin: 0;
+       font-size: clamp(38px, 4.3vw, 72px);
+       line-height: 1.08;
+       font-weight: 700;
+       letter-spacing: -1.5px;
+       color: #ffffff;
+       opacity: 0;
+       transform: translateY(-40px);
+   }
+
+   .soft-content h1 span {
+       color: #f1592a;
+   }
+
+   /* Description */
+   .soft-content p {
+       max-width: 650px;
+       margin-top: 25px;
+       font-size: 17px;
+       line-height: 1.8;
+       color: rgba(255, 255, 255, 0.78);
+       opacity: 0;
+       transform: translateY(35px);
+   }
+
+   /* ========================================================= CONTENT ANIMATION ========================================================= */
+   .swiper-slide-active .soft-small-title {
+       animation: softTextDown 0.7s ease forwards;
+       animation-delay: 0.25s;
+   }
+
+   .swiper-slide-active .soft-content h1 {
+       animation: softTextDown 0.8s ease forwards;
+       animation-delay: 0.45s;
+   }
+
+   .swiper-slide-active .soft-content p {
+       animation: softTextUp 0.8s ease forwards;
+       animation-delay: 0.8s;
+   }
+
+   @keyframes softTextDown {
+       from {
+           opacity: 0;
+           transform: translateY(-40px);
+       }
+
+       to {
+           opacity: 1;
+           transform: translateY(0);
+       }
+   }
+
+   @keyframes softTextUp {
+       from {
+           opacity: 0;
+           transform: translateY(35px);
+       }
+
+       to {
+           opacity: 1;
+           transform: translateY(0);
+       }
+   }
+
+   /* ========================================================= BUTTONS ========================================================= */
+   .soft-buttons {
+       display: flex;
+       flex-wrap: wrap;
+       align-items: center;
+       gap: 15px;
+       margin-top: 32px;
+       opacity: 0;
+       transform: translateY(30px);
+   }
+
+   .swiper-slide-active .soft-buttons {
+       animation: softTextUp 0.8s ease forwards;
+       animation-delay: 1.05s;
+   }
+
+   .soft-btn {
+       display: inline-flex;
+       align-items: center;
+       justify-content: center;
+       gap: 12px;
+       padding: 14px 25px;
+       border-radius: 50px;
+       font-size: 14px;
+       font-weight: 600;
+       text-decoration: none;
+       transition: all 0.3s ease;
+   }
+
+   .soft-btn.primary {
+       color: white;
+       background: #f1592a;
+       box-shadow: 0 10px 30px rgba(241, 89, 42, 0.25);
+   }
+
+   .soft-btn.primary:hover {
+       background: #ff754c;
+       transform: translateY(-3px);
+       box-shadow: 0 15px 35px rgba(241, 89, 42, 0.35);
+   }
+
+   .soft-btn.secondary {
+       color: white;
+       border: 1px solid rgba(255, 255, 255, 0.35);
+       background: rgba(255, 255, 255, 0.08);
+       backdrop-filter: blur(10px);
+   }
+
+   .soft-btn.secondary:hover {
+       background: white;
+       color: #0e1330;
+       transform: translateY(-3px);
+   }
+
+   /* ========================================================= PAGINATION ========================================================= */
+   .softpolliSwiper .swiper-pagination {
+       position: absolute;
+       right: 4%;
+       left: auto;
+       bottom: 50%;
+       transform: translateY(50%);
+       width: auto;
+       display: flex;
+       flex-direction: column;
+       gap: 10px;
+       z-index: 20;
+   }
+
+   .softpolliSwiper .swiper-pagination-bullet {
+       width: 10px;
+       height: 10px;
+       margin: 0 !important;
+       background: rgba(255, 255, 255, 0.5);
+       opacity: 1;
+       transition: all 0.4s ease;
+   }
+
+   .softpolliSwiper .swiper-pagination-bullet-active {
+       height: 35px;
+       background: #f1592a;
+       border-radius: 10px;
+   }
+
+   /* ========================================================= NAVIGATION ========================================================= */
+   .soft-navigation {
+       position: absolute;
+       right: 8%;
+       bottom: 130px;
+       z-index: 20;
+       display: flex;
+       gap: 10px;
+   }
+
+   .soft-navigation button {
+       width: 48px;
+       height: 48px;
+       display: grid;
+       place-items: center;
+       border: 1px solid rgba(255, 255, 255, 0.3);
+       border-radius: 50%;
+       color: white;
+       background: rgba(255, 255, 255, 0.08);
+       backdrop-filter: blur(10px);
+       cursor: pointer;
+       transition: all 0.3s ease;
+   }
+
+   .soft-navigation button:hover {
+       color: white;
+       background: #f1592a;
+       border-color: #f1592a;
+       transform: scale(1.08);
+   }
+
+   /* ========================================================= BOTTOM FEATURE BAR ========================================================= */
+   .soft-bottom-bar {
+       position: absolute;
+       left: 50%;
+       bottom: 0;
+       transform: translateX(-50%);
+       z-index: 30;
+       width: min(1050px, 80%);
+       display: flex;
+       align-items: center;
+       justify-content: space-between;
+       gap: 25px;
+       padding: 20px 28px;
+       color: white;
+       background: rgba(255, 255, 255, 0.09);
+       border: 1px solid rgba(255, 255, 255, 0.15);
+       border-bottom: 0;
+       border-radius: 18px 18px 0 0;
+       backdrop-filter: blur(20px);
+   }
+
+   .soft-feature {
+       display: flex;
+       align-items: center;
+       gap: 13px;
+   }
+
+   .soft-feature>i {
+       width: 42px;
+       height: 42px;
+       display: grid;
+       place-items: center;
+       border-radius: 50%;
+       color: #f1592a;
+       background: rgba(241, 89, 42, 0.12);
+   }
+
+   .soft-feature strong {
+       display: block;
+       font-size: 13px;
+       font-weight: 600;
+   }
+
+   .soft-feature small {
+       display: block;
+       margin-top: 3px;
+       color: rgba(255, 255, 255, 0.55);
+       font-size: 11px;
+   }
+
+   .soft-divider {
+       width: 1px;
+       height: 38px;
+       background: rgba(255, 255, 255, 0.2);
+   }
+
+   /* ========================================================= TABLET ========================================================= */
+   @media (max-width: 1024px) {
+       .softpolli-hero {
+           height: calc(100vh - 80px);
+           min-height: 650px;
+       }
+
+       .soft-content {
+           left: 7%;
+           width: 65%;
+       }
+
+       .soft-content h1 {
+           font-size: clamp(38px, 5vw, 58px);
+       }
+
+       .soft-bottom-bar {
+           width: 90%;
+       }
+   }
+
+   /* ========================================================= MOBILE ========================================================= */
+   @media (max-width: 768px) {
+       .softpolli-hero {
+           height: calc(100vh - 80px);
+           min-height: 700px;
+       }
+
+       .soft-background {
+           background-position: center;
+       }
+
+       .soft-background::after {
+           background: linear-gradient(180deg, rgba(8, 11, 30, 0.55) 0%, rgba(8, 11, 30, 0.82) 55%, rgba(8, 11, 30, 0.98) 100%);
+       }
+
+       .soft-content {
+           left: 6%;
+           top: 45%;
+           width: 88%;
+           transform: translateY(-50%);
+       }
+
+       .soft-small-title {
+           font-size: 10px;
+           letter-spacing: 2px;
+       }
+
+       .soft-content h1 {
+           font-size: clamp(35px, 10vw, 52px);
+           line-height: 1.08;
+       }
+
+       .soft-content p {
+           font-size: 14px;
+           line-height: 1.65;
+           margin-top: 18px;
+       }
+
+       .soft-buttons {
+           margin-top: 25px;
+       }
+
+       .soft-btn {
+           padding: 12px 18px;
+           font-size: 12px;
+       }
+
+       .softpolliSwiper .swiper-pagination {
+           right: 18px;
+       }
+
+       .soft-navigation {
+           display: none;
+       }
+
+       .soft-bottom-bar {
+           width: 92%;
+           padding: 12px;
+           justify-content: center;
+           bottom: 0;
+       }
+
+       .soft-feature {
+           display: none;
+       }
+
+       .soft-feature:first-child {
+           display: flex;
+       }
+
+       .soft-divider {
+           display: none;
+       }
+
+       .soft-feature>i {
+           width: 35px;
+           height: 35px;
+       }
+   }

@@ -42,6 +42,10 @@
 
   <!-- Font Awesome for icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <link rel="stylesheet" href="assets/hero/hero.css" />
+  <link rel="stylesheet" href="assets/testimonial/testimonial.css">
 
   <style>
     .watermark {
@@ -99,7 +103,7 @@
         <a href="#about" class="hover:text-brand transition">About Us </a>
         <!-- <a href="#pricing" class="hover:text-brand transition">Pricing </a> -->
         <!-- <a href="#blog" class="hover:text-brand transition">Blog </a> -->
-        <a href="#contact" class="hover:text-brand transition">Contact Us </a>
+        <!-- <a href="#contact" class="hover:text-brand transition">Contact Us </a> -->
       </nav>
 
       <div class="flex items-center gap-4">
@@ -122,8 +126,8 @@
         <a href="#about" class="py-1 hover:text-brand">About Us</a>
         <a href="#services" class="py-1 hover:text-brand">Our Services</a>
         <a href="#projects" class="py-1 hover:text-brand">Portfolio</a>
-        <a href="#pricing" class="py-1 hover:text-brand">Pricing</a>
-        <a href="#blog" class="py-1 hover:text-brand">Blog</a>
+        <!-- <a href="#pricing" class="py-1 hover:text-brand">Pricing</a> -->
+        <!-- <a href="#blog" class="py-1 hover:text-brand">Blog</a> -->
         <a href="#contact" class="py-1 hover:text-brand">Contact Us</a>
         <a href="#contact"
           class="mt-2 inline-flex justify-center items-center bg-brand text-white font-semibold px-6 py-3 rounded-full">Get
@@ -132,8 +136,8 @@
     </nav>
   </header>
 
-  <!-- ============ HERO ============ -->
-  <section id="home" class="relative overflow-hidden bg-white">
+  <!-- ============ HERO ============ main temnplate -->
+  <!-- <section id="home" class="relative overflow-hidden bg-white">
     <div class="hidden lg:block absolute top-0 right-0 h-full w-[38%] bg-navy-900"></div>
 
     <div class="relative max-w-[90%] xl:max-w-[80%] mx-auto px-6 grid lg:grid-cols-2 gap-10 items-center pt-16 pb-24">
@@ -171,7 +175,181 @@
     <div class="pointer-events-none select-none absolute left-0 right-0 bottom-2 text-center">
       <span class="watermark text-[#F6F6F6S] text-[16vw] lg:text-[12rem] font-extrabold leading-none">BUSINESS</span>
     </div>
+  </section> -->
+
+  <!-- ============ HERO ============ Added By Didder Vai -->
+  <section id="home" class="softpolli-hero">
+    <div class="swiper softpolliSwiper">
+      <div class="swiper-wrapper">
+        <!-- SLIDE 01 -->
+        <div class="swiper-slide soft-slide">
+          <div class="soft-content">
+            <span class="soft-small-title">
+              <i class="fa-solid fa-code"></i> SOFTWARE SOLUTIONS
+            </span>
+            <h1>
+              Smart Software <span>Solutions</span> For Modern Businesses
+            </h1>
+            <p>
+              We build reliable, scalable and future-ready software solutions
+              that help businesses automate operations, improve efficiency and
+              grow faster.
+            </p>
+            <div class="soft-buttons">
+              <a href="#services" class="soft-btn primary">
+                Get Started <i class="fa-solid fa-arrow-right"></i>
+              </a>
+              <a href="#projects" class="soft-btn secondary">
+                View Portfolio <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+          <div class="soft-background"
+            style="background-image: url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d')"></div>
+        </div>
+        <!-- SLIDE 02 -->
+        <div class="swiper-slide soft-slide">
+          <div class="soft-content">
+            <span class="soft-small-title">
+              <i class="fa-solid fa-laptop-code"></i> WEB DEVELOPMENT
+            </span>
+            <h1>Powerful Web <span>Applications</span> Built For Growth</h1>
+            <p>
+              From business websites to complex web applications, we create
+              fast, secure and user-friendly digital experiences designed
+              around your business needs.
+            </p>
+            <div class="soft-buttons">
+              <a href="#contact" class="soft-btn primary">
+                Start A Project <i class="fa-solid fa-arrow-right"></i>
+              </a>
+              <a href="#services" class="soft-btn secondary">
+                Our Services <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+          <div class="soft-background" style="
+                background-image: url(&quot;https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1920&q=85&quot;);
+              "></div>
+        </div>
+        <!-- SLIDE 03 -->
+        <div class="swiper-slide soft-slide">
+          <div class="soft-content">
+            <span class="soft-small-title">
+              <i class="fa-solid fa-cart-shopping"></i> E-COMMERCE SOLUTIONS
+            </span>
+            <h1>
+              Grow Your <span>Online Business</span> With Powerful Technology
+            </h1>
+            <p>
+              Build a modern online store with powerful product management,
+              order management, payment integration and business automation
+              features.
+            </p>
+            <div class="soft-buttons">
+              <a href="#contact" class="soft-btn primary">
+                Build Your Store <i class="fa-solid fa-arrow-right"></i>
+              </a>
+              <a href="#projects" class="soft-btn secondary">
+                Explore Projects <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+          <div class="soft-background" style="
+                background-image: url(&quot;https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1920&q=85&quot;);
+              "></div>
+        </div>
+        <!-- SLIDE 04 -->
+        <div class="swiper-slide soft-slide">
+          <div class="soft-content">
+            <span class="soft-small-title">
+              <i class="fa-solid fa-mobile-screen-button"></i> CUSTOM SOFTWARE
+            </span>
+            <h1>Software That <span>Fits Your</span> Business</h1>
+            <p>
+              Every business is different. We develop custom software systems
+              that match your workflow, solve real problems and make everyday
+              operations easier.
+            </p>
+            <div class="soft-buttons">
+              <a href="#contact" class="soft-btn primary">
+                Discuss Your Idea <i class="fa-solid fa-arrow-right"></i>
+              </a>
+              <a href="#services" class="soft-btn secondary">
+                Learn More <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+          <div class="soft-background" style="
+                background-image: url(&quot;https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=1920&q=85&quot;);
+              "></div>
+        </div>
+        <!-- SLIDE 05 -->
+        <div class="swiper-slide soft-slide">
+          <div class="soft-content">
+            <span class="soft-small-title">
+              <i class="fa-solid fa-chart-line"></i> BUSINESS AUTOMATION
+            </span>
+            <h1>Automate Your <span>Business</span> Workflows</h1>
+            <p>
+              Reduce repetitive tasks, organize your business processes and
+              get better control over your operations with smart automation
+              solutions.
+            </p>
+            <div class="soft-buttons">
+              <a href="#contact" class="soft-btn primary">
+                Automate Now <i class="fa-solid fa-arrow-right"></i>
+              </a>
+              <a href="#about" class="soft-btn secondary">
+                About SoftPolli <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+          <div class="soft-background" style="
+                background-image: url(&quot;https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1920&q=85&quot;);
+              "></div>
+        </div>
+      </div>
+      <!-- Pagination -->
+      <div class="swiper-pagination"></div>
+      <!-- Navigation -->
+      <div class="soft-navigation">
+        <button class="soft-prev">
+          <i class="fa-solid fa-arrow-up"></i>
+        </button>
+        <button class="soft-next">
+          <i class="fa-solid fa-arrow-down"></i>
+        </button>
+      </div>
+    </div>
+    <!-- Bottom information bar -->
+    <div class="soft-bottom-bar">
+      <div class="soft-feature">
+        <i class="fa-solid fa-code"></i>
+        <div>
+          <strong>Custom Development</strong>
+          <small>Built around your needs</small>
+        </div>
+      </div>
+      <div class="soft-divider"></div>
+      <div class="soft-feature">
+        <i class="fa-solid fa-shield-halved"></i>
+        <div>
+          <strong>Secure & Reliable</strong>
+          <small>Technology you can trust</small>
+        </div>
+      </div>
+      <div class="soft-divider"></div>
+      <div class="soft-feature">
+        <i class="fa-solid fa-headset"></i>
+        <div>
+          <strong>Dedicated Support</strong>
+          <small>We're here when you need us</small>
+        </div>
+      </div>
+    </div>
   </section>
+
 
   <!-- ============ BRANDS ============ -->
   <section class="border-t border-slate-100 py-12">
@@ -561,106 +739,36 @@
     </div>
   </section>
 
-  <!-- ============ WHY CHOOSE US / SKILLS ============ -->
-  <section class="py-24 bg-white" id="choose-us">
-    <div class="max-w-[90%] xl:max-w-[80%] mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center">
-      <div class="relative flex items-center justify-center min-h-[380px] sm:min-h-[420px]">
-        <div
-          class="w-48 sm:w-56 h-72 sm:h-80 rounded-3xl overflow-hidden shadow-lg opacity-40 -rotate-6 absolute left-4 sm:left-8">
-          <img src="images/skills-1.jpg" alt="Consultant" class="w-full h-full object-cover" />
-        </div>
-        <div
-          class="w-48 sm:w-56 h-72 sm:h-80 rounded-3xl overflow-hidden shadow-xl opacity-75 -rotate-3 absolute left-14 sm:left-24">
-          <img src="images/skills-2.jpg" alt="Team meeting" class="w-full h-full object-cover" />
-        </div>
-        <div class="relative z-10 w-56 sm:w-64 h-80 sm:h-96 rounded-3xl overflow-hidden shadow-2xl ml-20 sm:ml-32">
-          <img src="images/skills-3.jpg" alt="Business consultant" class="w-full h-full object-cover" />
-          <div class="absolute inset-0 bg-gradient-to-t from-navy-900/90 via-navy-900/30 to-transparent"></div>
-          <div
-            class="absolute top-1/3 left-6 w-14 h-14 rounded-full bg-brand text-white grid place-items-center shadow-lg cursor-pointer hover:scale-105 transition">
-            <i class="fa-solid fa-arrow-right -rotate-45 text-sm"></i>
-          </div>
-          <div class="absolute bottom-6 left-6 right-6 text-white">
-            <span class="text-xl font-extrabold text-brand block">01.</span>
-            <h4 class="font-bold text-base mt-0.5">Project Analysis</h4>
-            <p class="text-[11px] text-slate-300 mt-1 leading-snug">
-              Research &amp; development in project analysis sector represents its strength on strategy making &amp;
-              market research.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div>
-        <p class="text-brand font-semibold tracking-[0.2em] text-xs mb-3">WHY CHOOSE US</p>
-        <h2 class="text-3xl sm:text-4xl font-extrabold text-navy-900 leading-tight mb-4 text-balance">
-          Our skills are the main reasons to choose us
-        </h2>
-        <p class="text-slate-500 text-sm leading-relaxed mb-8 max-w-lg">
-          Cigma provides a comprehensive range of training and consulting services for business consulting, data
-          analysis, and strategic business planning. It's a chance for fresh endeavors.
-        </p>
-
-        <div class="space-y-6 max-w-lg">
-          <div>
-            <div class="flex justify-between text-xs font-bold text-navy-900 mb-2">
-              <span>Market Research</span>
-              <span>99%</span>
-            </div>
-            <div class="w-full bg-slate-100 rounded-full h-2 overflow-hidden">
-              <div class="bg-brand h-2 rounded-full" style="width: 99%"></div>
-            </div>
-          </div>
-          <div>
-            <div class="flex justify-between text-xs font-bold text-navy-900 mb-2">
-              <span>Financial Report</span>
-              <span>92%</span>
-            </div>
-            <div class="w-full bg-slate-100 rounded-full h-2 overflow-hidden">
-              <div class="bg-brand h-2 rounded-full" style="width: 92%"></div>
-            </div>
-          </div>
-          <div>
-            <div class="flex justify-between text-xs font-bold text-navy-900 mb-2">
-              <span>Digital Marketing</span>
-              <span>89%</span>
-            </div>
-            <div class="w-full bg-slate-100 rounded-full h-2 overflow-hidden">
-              <div class="bg-brand h-2 rounded-full" style="width: 89%"></div>
-            </div>
-          </div>
-        </div>
-
-        <a href="#contact"
-          class="mt-9 inline-flex items-center gap-2 bg-navy-900 hover:bg-navy-700 transition text-white text-xs font-semibold px-7 py-3.5 rounded-full">
-          Contact Us <i class="fa-solid fa-arrow-right text-[10px]"></i>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============ PROJECTS TICKER / MARQUEE ============ -->
-  <div class="border-y border-slate-100 py-4 overflow-hidden bg-white">
-    <div
-      class="flex items-center justify-around gap-8 text-xl sm:text-2xl font-extrabold text-navy-900 tracking-wider whitespace-nowrap">
-      <span>CIGMA PROJECTS</span>
-      <i class="fa-solid fa-asterisk text-brand text-sm"></i>
-      <span>BUSINESS</span>
-      <i class="fa-solid fa-asterisk text-brand text-sm"></i>
-      <span>CIGMA PROJECTS</span>
-      <i class="fa-solid fa-asterisk text-brand text-sm"></i>
-      <span>FINANCE</span>
-    </div>
-  </div>
-
   <!-- ============ PROJECTS LIST ============ -->
   <section id="projects" class="py-20 bg-white">
-    <div class="max-w-6xl mx-auto px-6 space-y-16">
-
+    <div class="max-w-[90%] xl:max-w-[80%] mx-auto px-6 space-y-16">
 
       <article class="grid md:grid-cols-2 gap-10 items-center border-b border-slate-100 pb-16">
         <div>
           <span class="stroke-number text-5xl sm:text-6xl font-extrabold block mb-2">01</span>
+          <p class="text-brand text-xs font-semibold tracking-wider mb-2"> POS-LTE —</p>
+          <h3 class="text-2xl sm:text-3xl font-extrabold text-navy-900 leading-snug mb-3">
+            It is a modern Point of Sale and Receipt Management System
+          </h3>
+          <p class="text-slate-500 text-xs sm:text-sm leading-relaxed mb-6">
+            The system provides a streamlined interface for managing food items, creating orders, viewing order details,
+            and generating customer receipts. it is designed to simplify food ordering, billing and receipt management
+            for food businesses.
+          </p>
+          <a href="https://pos-lte.vercel.app/"
+            class="inline-flex items-center gap-1.5 bg-brand hover:bg-brand-light transition text-white text-xs font-semibold px-5 py-2.5 rounded-full">
+            Know More <i class="fa-solid fa-plus text-[10px]"></i>
+          </a>
+        </div>
+        <div class="rounded-3xl overflow-hidden shadow-lg h-[260px] sm:h-[320px]">
+          <img src="images/projects/5b.png" alt="Strategic Mergers and Acquisitions advisory"
+            class="w-full h-full object-cover" />
+        </div>
+      </article>
+
+      <article class="grid md:grid-cols-2 gap-10 items-center border-b border-slate-100 pb-16">
+        <div>
+          <span class="stroke-number text-5xl sm:text-6xl font-extrabold block mb-2">02</span>
           <p class="text-brand text-xs font-semibold tracking-wider mb-2">TicketBari —</p>
           <h3 class="text-2xl sm:text-3xl font-extrabold text-navy-900 leading-snug mb-3">
             Online Bus, Train, Flight & Launch Ticket Booking Platform
@@ -682,7 +790,7 @@
 
       <article class="grid md:grid-cols-2 gap-10 items-center border-b border-slate-100 pb-16">
         <div>
-          <span class="stroke-number text-5xl sm:text-6xl font-extrabold block mb-2">02</span>
+          <span class="stroke-number text-5xl sm:text-6xl font-extrabold block mb-2">03</span>
           <p class="text-brand text-xs font-semibold tracking-wider mb-2">StyleDecor —</p>
           <h3 class="text-2xl sm:text-3xl font-extrabold text-navy-900 leading-snug mb-3">
             Event Decoration & Smart Home Service Booking Platform
@@ -705,7 +813,7 @@
 
       <article class="grid md:grid-cols-2 gap-10 items-center">
         <div>
-          <span class="stroke-number text-5xl sm:text-6xl font-extrabold block mb-2">03</span>
+          <span class="stroke-number text-5xl sm:text-6xl font-extrabold block mb-2">04</span>
           <p class="text-brand text-xs font-semibold tracking-wider mb-2">CMS Company Website —</p>
           <h3 class="text-2xl sm:text-3xl font-extrabold text-navy-900 leading-snug mb-3">
             Content Management System & Web Solutions
@@ -766,15 +874,15 @@
             Explore More <i class="fa-solid fa-arrow-right text-xs"></i>
           </a>
           <div class="leading-tight">
-            <span class="block font-[cursive] text-2xl text-navy-900">Signature</span>
-            <span class="text-xs text-slate-500">CEO &amp; Founder</span>
+            <span class="block font-[cursive] text-lg text-navy-900">Platform</span>
+            <span class="text-xs text-slate-500">our story and values</span>
           </div>
         </div>
       </div>
 
       <div>
         <div class="rounded-3xl overflow-hidden shadow-xl">
-          <img src="images/about-team.png" alt="Business professionals in a modern office"
+          <img src="images/‍soft-team.png" alt="Business professionals in a modern office"
             class="w-full h-[360px] object-cover" />
         </div>
       </div>
@@ -784,7 +892,7 @@
           <span class="grid place-items-center w-12 h-12 rounded-full bg-brand/10 text-brand"><i
               class="fa-solid fa-users"></i></span>
           <div>
-            <p class="text-2xl font-extrabold">386+</p>
+            <p class="text-2xl font-extrabold">11+</p>
             <p class="text-xs text-slate-500">Satisfied clients across the world</p>
           </div>
         </div>
@@ -792,7 +900,7 @@
           <span class="grid place-items-center w-12 h-12 rounded-full bg-brand/10 text-brand"><i
               class="fa-solid fa-gear"></i></span>
           <div>
-            <p class="text-2xl font-extrabold">1390+</p>
+            <p class="text-2xl font-extrabold">14+</p>
             <p class="text-xs text-slate-500">Total projects we have completed</p>
           </div>
         </div>
@@ -800,7 +908,7 @@
           <span class="grid place-items-center w-12 h-12 rounded-full bg-brand/10 text-brand"><i
               class="fa-solid fa-award"></i></span>
           <div>
-            <p class="text-2xl font-extrabold">25+</p>
+            <p class="text-2xl font-extrabold">2+</p>
             <p class="text-xs text-slate-500">Years of experience in this field</p>
           </div>
         </div>
@@ -811,6 +919,100 @@
 
     </div>
   </section>
+
+  <!-- ============ WHY CHOOSE US / SKILLS ============ -->
+  <section class="py-24 bg-white" id="choose-us">
+    <div class="max-w-[90%] xl:max-w-[80%] mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center">
+      <div class="relative flex items-center justify-center min-h-[380px] sm:min-h-[420px]">
+        <div
+          class="w-48 sm:w-56 h-72 sm:h-80 rounded-3xl overflow-hidden shadow-lg opacity-40 -rotate-6 absolute left-4 sm:left-8">
+          <img src="images/skills-3.jpg" alt="Consultant" class="w-full h-full object-cover" />
+        </div>
+        <div
+          class="w-48 sm:w-56 h-72 sm:h-80 rounded-3xl overflow-hidden shadow-xl opacity-75 -rotate-3 absolute left-14 sm:left-24">
+          <img src="images/skills-2.jpg" alt="Team meeting" class="w-full h-full object-cover" />
+        </div>
+        <div class="relative z-10 w-56 sm:w-64 h-80 sm:h-96 rounded-3xl overflow-hidden shadow-2xl ml-20 sm:ml-32">
+          <img src="images/skills-1.jpg" alt="Business consultant" class="w-full h-full object-cover" />
+          <div class="absolute inset-0 bg-gradient-to-t from-navy-900/90 via-navy-900/30 to-transparent"></div>
+          <div
+            class="absolute top-1/3 left-6 w-14 h-14 rounded-full bg-brand text-white grid place-items-center shadow-lg cursor-pointer hover:scale-105 transition">
+            <i class="fa-solid fa-arrow-right -rotate-45 text-sm"></i>
+          </div>
+          <div class="absolute bottom-6 left-6 right-6 text-white">
+            <span class="text-xl font-extrabold text-brand block">01.</span>
+            <h4 class="font-bold text-base mt-0.5">Project Analysis</h4>
+            <p class="text-[11px] text-slate-300 mt-1 leading-snug">
+              Research &amp; development in project analysis sector represents its strength on strategy making &amp;
+              market research.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <p class="text-brand font-semibold tracking-[0.2em] text-xs mb-3">WHY CHOOSE US</p>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-navy-900 leading-tight mb-4 text-balance">
+          Driven by Engineering Excellence and Modern Technology
+        </h2>
+        <p class="text-slate-500 text-sm leading-relaxed mb-8 max-w-lg">
+          Founded in 2025 by a dedicated team of Nine software engineers, we combine technical precision with business
+          insight. We build scalable ERP systems, custom web applications, and smart automation tools designed to
+          optimize operations and drive sustainable global growth.
+        </p>
+
+        <div class="space-y-6 max-w-lg">
+          <div>
+            <div class="flex justify-between text-xs font-bold text-navy-900 mb-2">
+              <span>Custom Software & ERP Development</span>
+              <span>98%%</span>
+            </div>
+            <div class="w-full bg-slate-100 rounded-full h-2 overflow-hidden">
+              <div class="bg-brand h-2 rounded-full" style="width: 99%"></div>
+            </div>
+          </div>
+          <div>
+            <div class="flex justify-between text-xs font-bold text-navy-900 mb-2">
+              <span>Web & Enterprise Application Architecture</span>
+              <span>95%</span>
+            </div>
+            <div class="w-full bg-slate-100 rounded-full h-2 overflow-hidden">
+              <div class="bg-brand h-2 rounded-full" style="width: 92%"></div>
+            </div>
+          </div>
+          <div>
+            <div class="flex justify-between text-xs font-bold text-navy-900 mb-2">
+              <span>System Automation & Integration</span>
+              <span>93%</span>
+            </div>
+            <div class="w-full bg-slate-100 rounded-full h-2 overflow-hidden">
+              <div class="bg-brand h-2 rounded-full" style="width: 89%"></div>
+            </div>
+          </div>
+        </div>
+
+        <a href="#contact"
+          class="mt-9 inline-flex items-center gap-2 bg-navy-900 hover:bg-navy-700 transition text-white text-xs font-semibold px-7 py-3.5 rounded-full">
+          Contact Us <i class="fa-solid fa-arrow-right text-[10px]"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROJECTS TICKER / MARQUEE ============ -->
+  <div class="border-y border-slate-100 py-4 overflow-hidden bg-white">
+    <div
+      class="flex items-center justify-around gap-8 text-xl sm:text-2xl font-extrabold text-navy-900 tracking-wider whitespace-nowrap">
+      <span>SOFTPOLLI PROJECTS</span>
+      <i class="fa-solid fa-asterisk text-brand text-sm"></i>
+      <span>BUSINESS</span>
+      <i class="fa-solid fa-asterisk text-brand text-sm"></i>
+      <span>SOFTPOLLI PROJECTS</span>
+      <i class="fa-solid fa-asterisk text-brand text-sm"></i>
+      <span>FINANCE</span>
+    </div>
+  </div>
+
 
   <!-- ============ TEAM MEMBERS ============ -->
   <!-- <section class="bg-navy-900 text-white py-20">
@@ -1021,14 +1223,14 @@
               </div>
 
               <div class="flex gap-2 text-slate-300 text-xs">
-                <a href="#" class="hover:text-brand">
+                <a href="https://www.facebook.com/taukir.ahmed.30" class="hover:text-brand">
                   <i class="fa-brands fa-facebook-f"></i>
                 </a>
-                <a href="#" class="hover:text-brand">
-                  <i class="fa-brands fa-twitter"></i>
-                </a>
-                <a href="#" class="hover:text-brand">
+                <a href="www.linkedin.com/in/taukir-dev" class="hover:text-brand">
                   <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+                <a href="https://taukir-ahmed.netlify.app/" class="hover:text-brand">
+                  <i class="fa-solid fa-globe"></i>
                 </a>
               </div>
             </div>
@@ -1037,12 +1239,12 @@
 
           <!-- Member 4 -->
           <div class="team-card relative rounded-3xl overflow-hidden bg-slate-800 group h-[380px] flex-shrink-0">
-            <img src="images/sabbir_gemini.png" alt="Sabbir Ahmed" class="w-full h-full object-cover" />
+            <img src="images/sabbir.png" alt="Sabbir Ahmed" class="w-full h-full object-cover" />
 
             <div
               class="absolute bottom-4 left-4 right-4 bg-navy-950/90 backdrop-blur rounded-2xl p-4 flex items-center justify-between">
               <div>
-                <h4 class="font-bold text-sm text-white">
+                <h4 class="font-bold text-sm text-white" href="https://sabbir-web.netlify.app/">
                   Sabbir Ahmed
                 </h4>
                 <p class="text-[11px] text-slate-400">
@@ -1051,14 +1253,14 @@
               </div>
 
               <div class="flex gap-2 text-slate-300 text-xs">
-                <a href="#" class="hover:text-brand">
+                <a href="https://www.facebook.com/sabbirbd912" class="hover:text-brand">
                   <i class="fa-brands fa-facebook-f"></i>
                 </a>
-                <a href="#" class="hover:text-brand">
-                  <i class="fa-brands fa-twitter"></i>
-                </a>
-                <a href="#" class="hover:text-brand">
+                <a href="https://www.linkedin.com/in/sabbir-ahmed-dev/" class="hover:text-brand">
                   <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+                <a href="https://sabbir-web.netlify.app/" class="hover:text-brand">
+                  <i class="fa-solid fa-globe"></i>
                 </a>
               </div>
             </div>
@@ -1189,53 +1391,115 @@
     </div>
   </section>
 
-  <!-- ============ CLIENT TESTIMONIALS ============ -->
-  <section class="py-24 bg-slate-50/50">
-    <div class="max-w-[90%] xl:max-w-[80%] mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center">
-      <!-- Left: Office Meeting Image -->
-      <div class="rounded-3xl overflow-hidden shadow-xl h-[420px]">
-        <img src="images/happymeeting.jpg" alt="Business client meeting" class="w-full h-full object-cover" />
+  <!-- ============ CLIENT TESTIMONIALS ============ Added By Dider Vai -->
+  <section class="bg-navy-900/95 text-slate-100 min-h-screen flex items-center justify-center p-4 sm:p-6 md:p-10">
+    <div
+      class="max-w-[90%] xl:max-w-[80%] mx-auto bg-navy-900 backdrop-blur-xl border border-slate-700/60 rounded-3xl p-6 sm:p-10 md:p-12 shadow-2xl">
+      <!-- Top Header Badge -->
+      <div
+        class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-10 pb-6 border-b border-slate-700/50">
+        <div>
+          <div
+            class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-500/10 border border-blue-500/30 text-blue-400 text-xs font-semibold tracking-wider uppercase mb-3">
+            <i class="fa-solid fa-code text-blue-400"></i> Client Success
+            Stories
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+            Trusted by Tech Leaders Worldwide
+          </h2>
+        </div>
+        <div class="flex items-center gap-2 text-slate-400 text-sm">
+          <span class="flex h-2.5 w-2.5 rounded-full bg-emerald-500 animate-pulse"></span>
+          Over 13+ Enterprise Apps Delivered
+        </div>
       </div>
 
-      <!-- Right: Testimonial & Client Avatars -->
-      <div class="flex items-start gap-8">
-        <!-- Client Avatar Column -->
-        <div class="flex flex-col gap-3 shrink-0">
-          <img src="images/avatar-1.png" alt="Client avatar"
-            class="w-12 h-12 rounded-full ring-2 ring-brand object-cover" />
-          <img src="images/avatar-2.png" alt="Client avatar"
-            class="w-12 h-12 rounded-full opacity-60 hover:opacity-100 transition object-cover" />
-          <img src="images/avatar-3.png" alt="Client avatar"
-            class="w-12 h-12 rounded-full opacity-60 hover:opacity-100 transition object-cover" />
-          <img src="images/avatar-4.png" alt="Client avatar"
-            class="w-12 h-12 rounded-full opacity-60 hover:opacity-100 transition object-cover" />
+      <div class="grid lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+        <div class="lg:col-span-5 flex flex-col items-center">
+          <div class="testimonial-image-container w-full" id="image-container">
+            <!-- Dynamically populated 3D stacked image cards -->
+          </div>
+
+          <!-- Interactive Avatar Selector Bar -->
+          <div
+            class="flex items-center justify-center gap-3 mt-6 p-2 rounded-2xl bg-slate-900/60 border border-slate-700/40"
+            id="avatar-bar">
+            <!-- Dynamically rendered avatar thumbnails -->
+          </div>
         </div>
 
-        <div>
-          <p class="text-brand font-semibold tracking-[0.2em] text-sm mb-3">TESTIMONIALS</p>
-          <h2 class="text-3xl sm:text-4xl font-extrabold text-navy-900 leading-tight mb-6">
-            Appreciation by our awesome clients
-          </h2>
+        <div class="lg:col-span-7 flex flex-col justify-between h-full space-y-6">
+          <div>
+            <!-- Quote Icon and Rating -->
+            <div class="flex items-center justify-between mb-6">
+              <div
+                class="w-12 h-12 rounded-2xl bg-blue-600/20 border border-blue-500/30 text-blue-400 flex items-center justify-center text-2xl shadow-inner">
+                <i class="fa-solid fa-quote-left"></i>
+              </div>
 
-          <div class="text-brand text-3xl mb-4">
-            <i class="fa-solid fa-quote-left"></i>
+              <!-- Star Ratings -->
+              <div class="flex items-center gap-1 bg-amber-500/10 border border-amber-500/20 px-3 py-1.5 rounded-full"
+                id="rating-stars">
+                <i class="fa-solid fa-star text-amber-400 text-sm"></i>
+                <i class="fa-solid fa-star text-amber-400 text-sm"></i>
+                <i class="fa-solid fa-star text-amber-400 text-sm"></i>
+                <i class="fa-solid fa-star text-amber-400 text-sm"></i>
+                <i class="fa-solid fa-star text-amber-400 text-sm"></i>
+                <span class="text-xs font-semibold text-amber-300 ml-1">5.0</span>
+              </div>
+            </div>
+
+            <!-- Animated Quote Text -->
+            <p class="text-slate-200 text-lg sm:text-xl font-normal leading-relaxed min-h-[120px] sm:min-h-[110px]"
+              id="quote-text">
+              <!-- Animated word elements injected via JS -->
+            </p>
+
+            <!-- Client Info -->
+            <div class="mt-6 pt-6 border-t border-slate-700/60 flex items-center justify-between">
+              <div>
+                <h3 class="text-xl font-bold text-white tracking-wide" id="client-name"></h3>
+                <p class="text-sm font-medium text-blue-400 mt-0.5" id="client-designation"></p>
+                <p class="text-xs text-slate-400 mt-1 flex items-center gap-1.5">
+                  <i class="fa-solid fa-building text-slate-500"></i>
+                  <span id="client-company"></span>
+                </p>
+              </div>
+
+              <!-- Category Badge -->
+              <span
+                class="px-3 py-1 rounded-lg bg-slate-700/50 border border-slate-600/40 text-xs font-medium text-slate-300 hidden sm:inline-block"
+                id="project-category">
+                Software Solution
+              </span>
+            </div>
           </div>
 
-          <p class="text-slate-600 text-sm leading-relaxed mb-6">
-            We were communicating via text and email previously. People were missing messages and not getting important
-            information. Cigma has revolutionized our communication!
-          </p>
+          <div class="flex items-center justify-between pt-4">
+            <!-- Navigation Arrows -->
+            <div class="flex items-center gap-3">
+              <button id="prev-btn" aria-label="Previous Testimonial"
+                class="w-12 h-12 rounded-full bg-slate-700 hover:bg-blue-600 border border-slate-600 hover:border-blue-500 text-white flex items-center justify-center transition-all duration-300 group shadow-lg">
+                <svg class="w-5 h-5 fill-current transform group-hover:-translate-x-0.5 transition-transform"
+                  viewBox="0 0 24 24">
+                  <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z" />
+                </svg>
+              </button>
 
-          <div class="flex text-amber-400 text-xs gap-1 mb-2">
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
+              <button id="next-btn" aria-label="Next Testimonial"
+                class="w-12 h-12 rounded-full bg-slate-700 hover:bg-blue-600 border border-slate-600 hover:border-blue-500 text-white flex items-center justify-center transition-all duration-300 group shadow-lg">
+                <svg class="w-5 h-5 fill-current transform group-hover:translate-x-0.5 transition-transform"
+                  viewBox="0 0 24 24">
+                  <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" />
+                </svg>
+              </button>
+            </div>
+
+            <!-- Slide Indicator Dots -->
+            <div class="flex items-center gap-2" id="dots-container">
+              <!-- Dynamic dots inserted here -->
+            </div>
           </div>
-
-          <h4 class="font-bold text-navy-900 text-sm">Julia Smith</h4>
-          <p class="text-xs text-slate-400">Business Owner</p>
         </div>
       </div>
     </div>
@@ -1395,7 +1659,7 @@
   <section id="contact" class="grid lg:grid-cols-2">
     <!-- Left: Dark Form Container -->
     <div class="bg-navy-900 text-white px-8 sm:px-16 py-20 flex flex-col justify-center">
-      <div class="max-w-md w-full mx-auto">
+      <div class="max-w-[90%] xl:max-w-[80%] mx-auto">
         <p class="text-brand font-semibold tracking-[0.2em] text-sm mb-2">GET IN TOUCH</p>
         <h2 class="text-3xl sm:text-4xl font-extrabold mb-8">Feel free to contact us</h2>
 
@@ -1542,7 +1806,7 @@
 
   <!-- ============ FAQ SECTION ============ -->
   <section id="faq" class="py-24 bg-white">
-    <div class="max-w-7xl mx-auto px-6">
+    <div class="max-w-[90%] xl:max-w-[80%] mx-auto px-6">
 
       <p class="text-brand font-semibold tracking-[0.2em] text-sm mb-4 relative inline-block">
         FREQUENTLY ASKED
@@ -1630,7 +1894,7 @@
 
   <!-- ============ CALL TO ACTION BANNER ============ -->
   <section class="bg-navy-950 text-white py-12 border-b border-slate-800">
-    <div class="max-w-[90%] xl:max-w-[80%] mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6">
+    <div class="max-w-full mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6">
       <div>
         <h3 class="text-2xl sm:text-3xl font-extrabold">We can help you to move.</h3>
         <p class="text-slate-400 text-sm mt-1">Get a quote today.</p>
@@ -1644,14 +1908,14 @@
 
   <!-- ============ FOOTER ============ -->
   <footer class="bg-navy-950 text-white/70">
-    <div class="max-w-[90%] xl:max-w-[80%] mx-auto px-6 py-16 grid gap-10 md:grid-cols-4 border-b border-slate-800/80">
+    <div class="w-full mx-auto px-6 py-16 grid gap-10 md:grid-cols-4 border-b border-slate-800/80">
       <!-- Col 1 -->
       <div>
         <a href="#" class="flex items-center gap-2 mb-4">
           <img src="images/SoftPolli-logo-offset.png" alt="logo" class="w-[150px]">
         </a>
         <p class="text-xs leading-relaxed text-slate-400 mb-6">
-          Cigma helps professionals with comprehensive consulting services. Our expert team partners with you to
+          SoftPolli helps professionals with comprehensive consulting services. Our expert team partners with you to
           identify growth opportunities.
         </p>
         <div class="flex gap-2">
@@ -1676,7 +1940,7 @@
         <ul class="space-y-2.5 text-xs text-slate-400">
           <li><a href="#home" class="hover:text-brand transition">Home</a></li>
           <li><a href="#about" class="hover:text-brand transition">About Us</a></li>
-          <li><a href="#pricing" class="hover:text-brand transition">Pricing Plan</a></li>
+          <!-- <li><a href="#pricing" class="hover:text-brand transition">Pricing Plan</a></li> -->
           <li><a href="#services" class="hover:text-brand transition">Services</a></li>
           <li><a href="#" class="hover:text-brand transition">Testimonial</a></li>
           <li><a href="#contact" class="hover:text-brand transition">Appointment</a></li>
@@ -1717,7 +1981,7 @@
     <!-- Sub Footer with Back to Top -->
     <div
       class="max-w-[90%] xl:max-w-[80%] mx-auto px-6 py-6 text-[11px] text-slate-400 flex flex-col sm:flex-row items-center justify-between gap-4 relative">
-      <p>&copy; 2026 Cigma. All Rights Reserved.</p>
+      <p>&copy; 2026 SoftPolli. All Rights Reserved.</p>
 
       <!-- Back to top button -->
       <a href="#home"
@@ -1844,6 +2108,9 @@
       setCardWidth();
     });
   </script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="assets/hero/hero.js"></script>
+  <script src="assets/testimonial/testtimonial.js"></script>
 </body>
 
 </html>
