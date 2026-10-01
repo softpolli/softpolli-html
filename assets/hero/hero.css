@@ -396,7 +396,17 @@
        }
 
        .softpolliSwiper .swiper-pagination {
-           right: 18px;
+           top: auto;
+           right: auto;
+           bottom: 100px;
+           left: 50%;
+           transform: translateX(-50%);
+           flex-direction: row;
+       }
+
+       .softpolliSwiper .swiper-pagination-bullet-active {
+           width: 35px;
+           height: 10px;
        }
 
        .soft-navigation {
